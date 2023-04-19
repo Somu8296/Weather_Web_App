@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headerLinks}}
+</head>
+
+<body>
+    {{>navbar}}
+    <br>
+    <div id="arrow-left">
+        <a href="http://localhost:8000/"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path
+                    d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" />
+            </svg></a>
+    </div>
+    <!-- main header  -->
+    <div class="main_header">
+
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+
+                <div class="container-fluid  main_content">
+
+                    <form class="temp_form ">
+
+                        <input type="text" id="cityName" placeholder="Enter you city name.." autocomplete="off">
+                        <br>
+                        <input type="submit" value="search" id="submitBtn">
+                        <p id="temp_err"></p>
+                    </form>
+
+                    <div class="tempInformation  ">
+                        <div class="main_layer ">
+                            <p id="city_name">Get output here </p>
+                            <i class="fa-solid fa-cloud"></i>
+                            <div class="middle_layer data_hide">
+                                <p id="name"></p>
+                                <p id="temp"><span id="temp_real_val">0</span><sup>o</sup>C</p>
+                            </div>
+                            <br>
+                            <div class="middle_layer  data_hide">
+                                <h3> feels_like:
+                                    <span><strong id="weather_feels_like"></strong></span>
+
+                                </h3>
+                                <span id="section_line"></span>
+                                <h3> Humidity:
+                                    <span> <strong id="weather_Details_Id"></strong>
+                                    </span><span>%</span>
+                                </h3>
+
+
+                            </div>
+
+                            <div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- footer -->
+
+
+    <footer>
+        <p>
+            created by Hootboard!
+        </p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
